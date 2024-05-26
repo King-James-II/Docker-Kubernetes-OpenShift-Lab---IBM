@@ -16,6 +16,7 @@ docker pull <image-name>
 docker run -d <image-name>
 docker build -t <your-tag>:<version> .
 docker push <your-tag>:<version>
+```
 
 
 ## Lab 2: Kubernetes Basics
@@ -32,7 +33,7 @@ kubectl create -f replicaset.yaml
 kubectl run <pod-name> --image=<image-name>
 kubectl create -f pod.yaml
 kubectl apply -f pod-declarative.yaml
-
+```
 
 ## Lab 3: Kubernetes Application Management (Scaling & Updating)
 
@@ -50,6 +51,7 @@ kubectl set image deployment/<deployment-name> <container-name>=<new-image>
 kubectl rollout undo deployment/<deployment-name>
 kubectl create configmap <configmap-name> --from-file=<path/to/config>
 kubectl autoscale deployment/<deployment-name> --min=<min-pods> --max=<max-pods> --cpu-percent=<percentage>
+```
 
 ## Lab 4: OpenShift Basics
 
